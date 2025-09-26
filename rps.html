@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="rps.css" />
+  </head>
+  <body>
+    <div class="streak"></div>
+    <h1>Rock Paper Scissors</h1>
+    <img src="crescent-black.png" class="icon" />
+    <br />
+    <div class="buttons-container">
+      <button class="play-button js-rock-button">
+        <img src="pngwing.com.png" />
+      </button>
+      <button class="play-button js-paper-button">
+        <img src="pngwing.com (1).png" />
+      </button>
+      <button class="play-button js-scissors-button">
+        <img src="pngwing.com (2).png" />
+      </button>
+    </div>
+
+    <div class="announcement-container">
+      <div class="announcement"></div>
+      <div>
+        <img class="announcement-img" src="" />
+        <p class="you"></p>
+      </div>
+      <p class="x"></p>
+      <div>
+        <img class="announcement-img-2" src="" />
+        <p class="computer"></p>
+      </div>
+    </div>
+
+    <div style="margin: 0; display: flex">
+      <button class="reset js-reset">Reset</button>
+
+      <div class="score-table">
+        <div class="wins">Wins 0</div>
+        <div class="ties">Ties 0</div>
+        <div class="losses">Losses 0</div>
+      </div>
+
+      <button class="auto-play-button js-auto-play-button">Autoplay</button>
+    </div>
+
+    <div class="confirmation-popup">
+      <p class="confirmation-message">
+        Are you sure you want to reset the score?
+      </p>
+      <button class="yes-button">Yes</button>
+      <button class="no-button">No</button>
+    </div>
+
+    <div class="leaderboard-container">
+      <h2>Leaderboard</h2>
+      <ul class="leaderboard-list"></ul>
+    </div>
+
+    <script src="rps.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  </body>
+</html>
